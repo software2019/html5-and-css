@@ -1,37 +1,24 @@
 /* STYLE SHEET FOR INDEX.HTM */
 
-article {
-  padding: 10px;
+/* 
+==============
+Navbar
+==============
+ */
+nav {
+  background: #d8d8d8;
+  font-weight: bold;
+  float: left;
+  height: 420px;
+  margin-right: 10px;
+  padding-right: 24px;
 }
 
-body {
-  font-size: 80%;
-  font-family: arial, helvetica, geneva, sans-serif;
-  /* border-style: solid;
-  border-width: 5px;
-  border-color: #d8d8d8; */
-
-  /* short-hand of the above */
-  border: 5px solid #d8d8d8;
-}
-
-footer {
-  font-size: 80%;
-  text-align: center;
-  clear: both;
-  border-top-style: solid;
-  border-top-width: 5px;
-  border-top-color: #d8d8d8;
-  margin-top: 0;
-  padding: 0;
-}
-
-h1 {
-  font-family: arial, helvetica, geneva, sans-serif;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
+/* 
+==============
+Header
+==============
+ */
 header {
   /* border-bottom-color: #d8d8d8;
   border-bottom-style: solid;
@@ -41,17 +28,46 @@ header {
   border-bottom: 5px solid #d8d8d8;
 }
 
-nav {
-  background: #d8d8d8;
-  font-weight: bold;
-  float: left;
-  height: 420px;
-  padding-right: 24px;
-  margin-right: 10px;
+body {
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: #d8d8d8; */
+
+  /* short-hand of the above border */
+  border: 5px solid #d8d8d8;
+  font-size: 80%;
+  font-family: arial, helvetica, geneva, sans-serif;
+}
+
+article {
+  padding: 10px;
+}
+
+h1 {
+  font-family: arial, helvetica, geneva, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .floatright {
-  float: right;
   clear: right;
+  float: right;
   margin: 10px;
+}
+
+/* 
+==============
+Footer
+==============
+ */
+
+footer {
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-top-color: #d8d8d8;
+  clear: both;
+  font-size: 80%;
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
 }
