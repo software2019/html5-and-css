@@ -2,16 +2,13 @@
 
 /* 
 ==============
-Navbar
+Fonts
 ==============
  */
-nav {
-  background: #d8d8d8;
-  font-weight: bold;
-  float: left;
-  height: 420px;
-  margin-right: 10px;
-  padding-right: 24px;
+
+@font-face {
+  font-family: oregonfont;
+  src: url('../media/oregon\ book.ttf');
 }
 
 /* 
@@ -19,6 +16,7 @@ nav {
 Header
 ==============
  */
+
 header {
   /* border-bottom-color: #d8d8d8;
   border-bottom-style: solid;
@@ -28,6 +26,41 @@ header {
   border-bottom: 5px solid #d8d8d8;
 }
 
+/* 
+==============
+Navbar
+==============
+ */
+nav {
+  background: #d8d8d8;
+  font-weight: bold;
+  float: left;
+  height: 420px;
+  margin-right: 10px;
+  opacity: 0.8;
+  padding-right: 24px;
+}
+.navlinks {
+  background: #add8e6;
+  border: 2px solid #a1a1a1;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+  display: block;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+/* 
+==============
+Section
+==============
+ */
+section {
+  /* Background image added */
+  background-image: url('../media/globe.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 body {
   /* border-style: solid;
   border-width: 5px;
@@ -35,8 +68,9 @@ body {
 
   /* short-hand of the above border */
   border: 5px solid #d8d8d8;
-  font-size: 80%;
-  font-family: arial, helvetica, geneva, sans-serif;
+  font-size: 85%;
+  /* font-family: arial, helvetica, geneva, sans-serif; */
+  font-family: oregonfont;
 }
 
 article {
@@ -44,9 +78,10 @@ article {
 }
 
 h1 {
-  font-family: arial, helvetica, geneva, sans-serif;
+  /* font-family: arial, helvetica, geneva, sans-serif; */
   margin-top: 5px;
   margin-bottom: 0;
+  text-shadow: 3px 3px 3px #888888;
 }
 
 .floatright {
