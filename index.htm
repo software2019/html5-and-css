@@ -6,6 +6,7 @@
       name="Description"
       content="Sample Web site for learning HTML5 and CSS3"
     />
+    <link rel="stylesheet" type="text/css" href="css/habitat.css" />
     <link
       rel="shortcut icon"
       href="http://www.habitat.org/sites/default/files/favicon.ico"
@@ -14,15 +15,13 @@
     <title>Habitat for Humanity Int&#039;l</title>
   </head>
   <body>
-    <!-- HTML5 -->
-    <!-- head -->
+    <!-- header -->
     <header>
       <img src="media/logo.png" alt="Habitat for Humanity logo" />
     </header>
-    <!-- end of head -->
+    <!-- end of header -->
     <!-- nav -->
     <nav>
-      <h4>Simple, decent, affordable housing</h4>
       <ul>
         <li>
           <a href="http://www.habitat.org/how/about_us.aspx">Learn more</a>
@@ -44,71 +43,51 @@
     <!-- 1st article -->
     <article>
       <h1>Our Mission</h1>
-      <p>
-        Habitat for Humanity believes that every man, woman and child should
-        have a decent, safe and affordable place to live. We build and repair
-        houses all over the world using volunteer labor and donations. Our
-        partner families purchase these houses through no-profit, no-interest
-        mortgage loans or innovative financing methods.
-      </p>
       <img
+        class="floatright"
         src="media/menu_icon_default.jpg"
-        width="212"
-        height="121"
+        height="114"
         alt="Silhouettes of Habitat for Humanity workers"
       />
+      Habitat for Humanity believes that every man, woman and child should have
+      a decent, safe and affordable place to live. We build and repair houses
+      all over the world using volunteer labor and donations. Our partner
+      families purchase these houses through no-profit, no-interest mortgage
+      loans or innovative financing methods.
     </article>
     <!-- end of 1st article -->
     <!-- 2nd article -->
     <article>
       <h1>Why We Build</h1>
-      <p>
-        There are nearly 2 billion people around the world who live in slum
-        housing and more than 100 million are homeless. Families left homeless
-        by natural disasters, war and civil unrest often face dire housing
-        situations as they struggle to rebuild their lives. We provide shelter
-        and housing assistance to help these families recover.
-      </p>
       <!-- video element -->
-      <video height="210" class="center" controls="controls">
-        <source src="./media/habitat_video_Web_720.mp4" type="video/mp4" />
+      <video class="floatright" height="150" controls="controls">
+        <source src="media/habitat_video_Web_720.mp4" type="video/mp4" />
         Your browser does not support the HTML5 video element.
       </video>
       <!-- end of video element -->
+      There are nearly two billion people around the world who live in slum
+      housing and more than 100 million are homeless. Families left homeless by
+      natural disasters, war and civil unrest often face dire housing situations
+      as they struggle to rebuild their lives. We provide shelter and housing
+      assistance to help these families recover.
     </article>
     <!-- end of 2nd article -->
     <!-- 3rd article -->
     <article>
       <h1>Advocacy in Action</h1>
-      <p>
-        Volunteer Amy Miles lends her voice in support of Habitat's advocacy
-        efforts and Global Village trips. Use the audio controls below to hear
-        her stories.
-      </p>
+      Volunteer Amy Miles lends her voice in support of Habitat's advocacy
+      efforts and Global Village trips. Use the audio controls below to hear her
+      stories.
       <!-- audio element -->
-      <audio controls="controls" class="center">
-        <source src="./media/habitat_audio.mp3" type="audio/mpeg" />
-        Your browser does not support the HTML5 audio element.
-      </audio>
+      <p>
+        <audio controls="controls">
+          <source src="media/habitat_audio.mp3" type="audio/mpeg" />
+          Your browser does not support the HTML5 audio element.
+        </audio>
+      </p>
       <!-- end of audio element -->
     </article>
     <!-- end of 3rd article -->
-    <!-- aside -->
-    <aside>
-      <h4>Build Your Community</h4>
-      <a
-        href="http://www.habitat.org/youthprograms/ages_14_25/ages_14_25_default.aspx"
-        ><img src="media/YP3_14to25.jpg" alt="Habitat for Humanity logo"
-      /></a>
-      <p>
-        <a
-          href="http://www.habitat.org/youthprograms/ages_14_25/ages_14_25_default.aspx"
-          >Start today</a
-        >
-        to become the leaders of Habitat tomorrow!
-      </p>
-    </aside>
-    <!-- end of aside -->
     <!-- footer -->
     <footer>
       <a href="http://www.habitat.org/how/"> Learn About Habitat</a> |
@@ -117,7 +96,7 @@
       |
       <a href="http://www.habitat.org/stories_multimedia/"
         >Stories and Multimedia</a
-      ><br /><br />
+      ><br />
       <p>
         &#169;2014 Habitat for Humanity&#174; International. All rights
         reserved. "Habitat for Humanity&#174;" is a registered service mark
