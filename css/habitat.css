@@ -59,6 +59,8 @@ section {
   background-image: url('../media/globe.png');
   background-repeat: no-repeat;
   background-size: contain;
+  /* resize: both; */
+  /* overflow: auto; */
 }
 
 body {
@@ -88,6 +90,132 @@ h1 {
   clear: right;
   float: right;
   margin: 10px;
+}
+
+/* 
+==========
+2D Rotation
+==========
+*/
+
+#img-rotate {
+  /* IE9 */
+  -ms-transform: rotate(345deg);
+  /* Chrome and Safari */
+  -webkit-transform: rotate(345deg);
+  transform: rotate(345deg);
+  z-index: -1;
+  position: relative;
+}
+
+#video-rotate {
+  /* IE9 */
+  -ms-transform: rotate(15deg);
+  /* Chrome and Safari */
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+/* creating menu in the head */
+#drop-menu {
+  background: #add8e6;
+  border: 2px solid #a1a1a1;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+  color: #0000a0;
+  cursor: pointer;
+  display: block;
+  font-family: oregonfont;
+  font-weight: bold;
+  font-size: 85%;
+  height: 20px;
+  max-height: 20px;
+  padding: 5px;
+  width: 150px;
+}
+
+#drop-menu:hover {
+  border: 3px solid #bababa;
+}
+
+#drop-menu:hover .sub-menu {
+  display: inline-block;
+}
+
+.sub-menu {
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+  padding: 5px 5px;
+  width: 150px;
+}
+
+.sub-menu li {
+  border: 2px solid #add8e6;
+  background: #d8d8d8;
+  border-radius: 5px;
+  display: block;
+  list-style-type: none;
+  padding: 2px 5px;
+}
+
+.sub-menu li:hover {
+  border: 3px solid #bababa;
+}
+
+/* 
+==========
+3D Rotation
+==========
+*/
+#logo-rotate {
+  -webkit-transform: rotateY(180deg); /* Chrome and Safari */
+  transform: rotateY(180deg);
+}
+
+/* ===========
+   Animation
+   ===========
+ */
+
+/* The animation code */
+@keyframes logoAnimation {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+#animation {
+  position: relative;
+  /* Chrome and Safari: */
+  -webkit-animation-name: logoAnimation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  /* Other browsers */
+  animation-name: logoAnimation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
 }
 
 /* 
