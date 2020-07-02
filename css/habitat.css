@@ -142,6 +142,19 @@ h1 {
   display: inline-block;
 }
 
+#hide_button {
+  background: rgb(223, 218, 218);
+  border: 1px solid blue;
+  margin-top: 2px;
+  padding: 5px 5px 5px 5px;
+}
+#show_button {
+  background: rgb(223, 218, 218);
+  border: 1px solid blue;
+  margin-top: 2px;
+  padding: 5px 5px 5px 5px;
+}
+
 .sub-menu {
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
